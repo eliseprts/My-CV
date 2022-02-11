@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+@font-face {
+  font-family: "Montserrat Bold";
+  src: url(/fonts/Montserrat-Bold.ttf);
+}
+/* Général */
+body {
+  margin: 50px 100px 50px 100px;
+  font-family: "Helvetica", Arial, sans-serif;
+  font-size: 16px;
+  color: #313844;
+  line-height: 25px;
+  background-image: url(/images/blob2.png);
+  background-repeat: no-repeat;
+  background-size: 400px;
+  background-position-x: -30px;
+  background-position-y: -90px;
+}
+h1,
+h2,
+h3 {
+  font-family: "Montserrat Bold", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+}
+h3 {
+  color: #b76e22;
+}
+span {
+  font-weight: 100;
+  font-size: 14px;
+}
+/* Header */
+.header {
+  display: grid;
+  grid-template-columns: 35% 65%;
+}
+.header h1 {
+  font-size: 50px;
+  color: #b76e22;
+  padding-top: 50px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+}
+.header h2 {
+  font-size: 18px;
+  padding-left: 20px;
+}
+.header img {
+  height: 200px;
+  border-radius: 50%;
+  position: top left;
+}
+/* Aside */
+.aside {
+  display: grid;
+  grid-template-rows: 15% 15% 45%;
+  font-weight: bold;
+  padding: 20px 20px 20px 20px;
+}
+.aside li {
+  list-style-type: none;
+}
+.aside a {
+  text-decoration: none;
+  color: #313844;
+}
+.aside a:visited {
+  color: #313844;
+}
+.aside a:hover {
+  color: #efd1bc;
+}
+.skills {
+  padding-top: 10px;
+}
+/* Main */
+.main {
+  display: grid;
+  grid-template-columns: 35% 65%;
+}
+.timeline {
+  padding-left: 20px;
+  padding-top: 20px;
+}
+.timeline h4 {
+  padding-top: 10px;
+}
+.timeline li {
+  margin-left: 50px;
+  list-style-type: circle;
+  font-weight: 100;
+}
