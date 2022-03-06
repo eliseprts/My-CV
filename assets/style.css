@@ -58,7 +58,7 @@ h3 {
 /* Aside */
 .aside {
   display: grid;
-  grid-template-rows: 15% 10% 45% 25%;
+  grid-template-rows: 15% 10% 50% 25%;
   font-weight: bold;
   padding: 40px 20px 20px 20px;
 }
@@ -85,8 +85,28 @@ h3 {
   margin-top: 10px;
 }
 
+.hobbies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.hobbyContainer {
+  width: 85px;
+  height: 85px;
+  background-color: #efd1bc;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .hobbies img {
-  size: 10px;
+  width: 55px;
+  height: 55px;
+  filter: invert(21%) sepia(19%) saturate(535%) hue-rotate(179deg)
+    brightness(91%) contrast(93%);
 }
 
 /* Main */
