@@ -3,10 +3,7 @@
   padding: 0;
   border: 0;
 }
-@font-face {
-  font-family: "Montserrat Bold";
-  src: url(/fonts/Montserrat-Bold.ttf);
-}
+
 /* Général */
 body {
   margin: 50px 100px 50px 100px;
@@ -14,7 +11,7 @@ body {
   font-size: 16px;
   color: #313844;
   line-height: 25px;
-  background-image: url(/images/blob2.png);
+  background-image: url(/assets/blob2.png);
   background-repeat: no-repeat;
   background-size: 400px;
   background-position-x: -30px;
@@ -23,20 +20,22 @@ body {
 h1,
 h2,
 h3 {
-  font-family: "Montserrat Bold", Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  font-weight: 800;
   text-transform: uppercase;
 }
 h3 {
   color: #b76e22;
+  font-size: 22px;
 }
-span {
+.lighter {
   font-weight: 100;
   font-size: 14px;
 }
 /* Header */
 .header {
   display: grid;
-  grid-template-columns: 35% 65%;
+  grid-template-columns: 30% 70%;
 }
 .header h1 {
   font-size: 50px;
@@ -48,18 +47,20 @@ span {
 .header h2 {
   font-size: 18px;
   padding-left: 20px;
+  padding-right: 300px;
 }
 .header img {
   height: 200px;
   border-radius: 50%;
   position: top left;
 }
+
 /* Aside */
 .aside {
   display: grid;
-  grid-template-rows: 15% 15% 45%;
+  grid-template-rows: 15% 10% 45% 25%;
   font-weight: bold;
-  padding: 20px 20px 20px 20px;
+  padding: 40px 20px 20px 20px;
 }
 .aside li {
   list-style-type: none;
@@ -74,23 +75,46 @@ span {
 .aside a:hover {
   color: #efd1bc;
 }
-.skills {
-  padding-top: 10px;
+.certificate,
+.skillsContainer,
+.hobbies {
+  margin-top: 25px;
 }
+
+.skills {
+  margin-top: 10px;
+}
+
+.hobbies img {
+  size: 10px;
+}
+
 /* Main */
 .main {
   display: grid;
-  grid-template-columns: 35% 65%;
+  grid-template-columns: 30% 70%;
 }
+
 .timeline {
   padding-left: 20px;
-  padding-top: 20px;
+  padding-top: 40px;
 }
+
 .timeline h4 {
   padding-top: 10px;
+  font-size: 16px;
 }
+
+.timeline h5 {
+  font-size: 16px;
+}
+
 .timeline li {
+  list-style-type: none;
   margin-left: 50px;
-  list-style-type: circle;
   font-weight: 100;
+}
+
+.bullet {
+  color: #efd1bc;
 }
