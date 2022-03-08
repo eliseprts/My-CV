@@ -1,4 +1,4 @@
-# Part 1 of the HTML-CSS course (Field)
+# THE FIELD | Part 1 of the HTML-CSS course
 
 ## 02 Curriculum vitae
 
